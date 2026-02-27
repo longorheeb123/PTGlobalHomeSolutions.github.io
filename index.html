@@ -6,146 +6,147 @@
   <title>PT Global Home Solution</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+      scroll-behavior:smooth;
     }
 
-    body {
-      line-height: 1.6;
-      color: #333;
+    body{
+      line-height:1.6;
+      color:#333;
     }
 
-    header {
-      background: #5a3e2b;
-      color: white;
-      padding: 20px 50px;
-      position: fixed;
-      width: 100%;
-      top: 0;
-      z-index: 1000;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    header{
+      background:#4b2e1e;
+      color:white;
+      padding:20px 50px;
+      position:fixed;
+      width:100%;
+      top:0;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      z-index:1000;
     }
 
-    header h1 {
-      font-size: 20px;
+    header h1{
+      font-size:18px;
+      font-weight:600;
     }
 
-    nav a {
-      color: white;
-      margin-left: 20px;
-      text-decoration: none;
-      font-size: 14px;
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:20px;
+      font-size:14px;
     }
 
-    nav a:hover {
-      color: #ffd700;
+    nav a:hover{
+      color:#f4c542;
     }
 
-    .hero {
-      height: 100vh;
-      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-                  url('https://images.unsplash.com/photo-1582582494700-f8ce0b0f0c88?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: white;
-      padding: 20px;
+    .hero{
+      height:100vh;
+      background:linear-gradient(135deg,#5a3e2b,#8b5e3c);
+      color:white;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      padding:20px;
     }
 
-    .hero h2 {
-      font-size: 40px;
-      margin-bottom: 20px;
+    .hero h2{
+      font-size:40px;
+      margin-bottom:20px;
     }
 
-    .hero p {
-      font-size: 18px;
-      margin-bottom: 30px;
+    .hero p{
+      font-size:18px;
+      margin-bottom:30px;
+      max-width:600px;
+      margin-left:auto;
+      margin-right:auto;
     }
 
-    .btn {
-      background: #ffd700;
-      padding: 12px 25px;
-      text-decoration: none;
-      color: black;
-      font-weight: 600;
-      border-radius: 30px;
-      transition: 0.3s;
+    .btn{
+      background:#f4c542;
+      color:black;
+      padding:12px 25px;
+      text-decoration:none;
+      border-radius:30px;
+      font-weight:600;
+      transition:0.3s;
     }
 
-    .btn:hover {
-      background: white;
+    .btn:hover{
+      background:white;
     }
 
-    section {
-      padding: 80px 50px;
-      text-align: center;
+    section{
+      padding:90px 50px;
+      text-align:center;
     }
 
-    section h3 {
-      margin-bottom: 30px;
-      font-size: 28px;
-      color: #5a3e2b;
+    section h3{
+      font-size:28px;
+      margin-bottom:30px;
+      color:#5a3e2b;
     }
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      margin-top: 30px;
+    .about{
+      background:#f4f1ed;
     }
 
-    .card {
-      background: #f9f9f9;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:20px;
+      margin-top:30px;
     }
 
-    .card h4 {
-      margin-bottom: 10px;
-      color: #5a3e2b;
+    .card{
+      background:white;
+      padding:25px;
+      border-radius:10px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.1);
     }
 
-    .about {
-      background: #f4f1ed;
+    .card h4{
+      margin-bottom:10px;
+      color:#5a3e2b;
     }
 
-    .contact {
-      background: #5a3e2b;
-      color: white;
+    .contact{
+      background:#4b2e1e;
+      color:white;
     }
 
-    .contact p {
-      margin: 10px 0;
+    footer{
+      background:#2e1b12;
+      color:white;
+      text-align:center;
+      padding:20px;
+      font-size:14px;
     }
 
-    footer {
-      background: #3e2a1f;
-      color: white;
-      padding: 20px;
-      text-align: center;
-      font-size: 14px;
-    }
-
-    @media(max-width: 768px){
-      header {
-        padding: 15px 20px;
+    @media(max-width:768px){
+      header{
+        padding:15px 20px;
       }
 
-      section {
-        padding: 60px 20px;
+      section{
+        padding:70px 20px;
       }
 
-      .hero h2 {
-        font-size: 28px;
+      .hero h2{
+        font-size:28px;
       }
     }
+
   </style>
 </head>
 <body>
@@ -163,18 +164,17 @@
 <section class="hero">
   <div>
     <h2>Solusi Furnitur & Kayu Berkualitas</h2>
-    <p>Menyediakan mebel dan perabot rumah tangga dengan kualitas terbaik dan desain modern.</p>
+    <p>Kami menghadirkan mebel dan perabot rumah tangga berbahan kayu berkualitas tinggi dengan desain modern dan elegan.</p>
     <a href="#contact" class="btn">Hubungi Kami</a>
   </div>
 </section>
 
 <section id="about" class="about">
-  <h3>Tentang Kami</h3>
+  <h3>Tentang Perusahaan</h3>
   <p>
     PT Global Home Solution adalah perusahaan yang bergerak di bidang produksi dan distribusi
-    mebel serta perabot rumah tangga berbahan kayu berkualitas tinggi.
-    Kami berkomitmen menghadirkan produk yang kuat, elegan, dan tahan lama
-    untuk memenuhi kebutuhan hunian modern.
+    mebel serta perabot rumah tangga. Kami berkomitmen memberikan produk berkualitas,
+    kuat, dan tahan lama untuk kebutuhan hunian maupun proyek komersial.
   </p>
 </section>
 
@@ -183,46 +183,46 @@
   <div class="grid">
     <div class="card">
       <h4>Produksi Mebel</h4>
-      <p>Memproduksi berbagai jenis furnitur seperti meja, kursi, lemari, dan tempat tidur.</p>
+      <p>Meja, kursi, lemari, tempat tidur, dan berbagai kebutuhan interior rumah.</p>
     </div>
     <div class="card">
       <h4>Custom Furniture</h4>
-      <p>Menerima pesanan furnitur sesuai desain dan kebutuhan pelanggan.</p>
+      <p>Pembuatan furnitur sesuai ukuran dan desain permintaan pelanggan.</p>
     </div>
     <div class="card">
-      <h4>Distribusi & Pengiriman</h4>
-      <p>Melayani pengiriman produk ke berbagai wilayah dengan aman dan tepat waktu.</p>
+      <h4>Proyek Interior</h4>
+      <p>Melayani kebutuhan interior untuk rumah, kantor, dan apartemen.</p>
     </div>
   </div>
 </section>
 
-<section id="products">
+<section id="products" class="about">
   <h3>Produk Unggulan</h3>
   <div class="grid">
     <div class="card">
       <h4>Set Meja Makan</h4>
-      <p>Desain minimalis dengan material kayu solid berkualitas.</p>
+      <p>Desain minimalis berbahan kayu solid premium.</p>
     </div>
     <div class="card">
       <h4>Lemari Pakaian</h4>
-      <p>Kuat, tahan lama, dan elegan untuk kebutuhan rumah modern.</p>
+      <p>Kuat, elegan, dan tahan lama untuk kebutuhan rumah modern.</p>
     </div>
     <div class="card">
       <h4>Kitchen Set</h4>
-      <p>Custom kitchen set sesuai ukuran dan desain interior Anda.</p>
+      <p>Custom kitchen set sesuai konsep interior Anda.</p>
     </div>
   </div>
 </section>
 
 <section id="contact" class="contact">
   <h3>Kontak Kami</h3>
-  <p>📍 Alamat: Indonesia</p>
-  <p>📞 Telepon: 08xxxxxxxxxx</p>
-  <p>📧 Email: info@globalhomesolution.co.id</p>
+  <p>📍 Indonesia</p>
+  <p>📞 0882 0054 83057</p>
+  <p>📧 longorbeeh@gmail.com</p>
 </section>
 
 <footer>
-  &copy; 2026 PT Global Home Solution. All Rights Reserved.
+  © 2026 PT Global Home Solution. All Rights Reserved.
 </footer>
 
 </body>
